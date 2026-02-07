@@ -75,7 +75,7 @@ public class JwtAuthenticationFilter implements GlobalFilter {
         }
 
         if (path.startsWith("/jobs")) {
-            return roles.contains("ADMIN") || roles.contains("EMPLOYER") || roles.contains("CANDIDATE");
+            return roles.contains("admin") || roles.contains("EMPLOYER") || roles.contains("CANDIDATE");
         }
 
         if (path.startsWith("/applications")) {
